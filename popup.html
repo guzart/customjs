@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Custom JavaScript</title>
+        <link href="css/pure/0.4.2/base-min.css" rel="stylesheet">
+        <link href="css/pure/0.4.2/grids-nr-min.css" rel="stylesheet">
+        <link href="css/pure/0.4.2/forms-nr-min.css" rel="stylesheet">
+        <link href="css/pure/0.4.2/buttons-min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="lib/behave.js"></script>
+	</head>
+	<body>
+		<div class="cutomjs pure-g" id="cutomjs">
+            <form action="" method="post" accept-charset="utf-8" class="pure-form">            
+                <div class="about pure-u-2-5">
+                    <input type="text" name="domain" value="example.com" readonly="readonly">
+                </div>
+                <div class="enable pure-u-3-5 text-right">
+                    <label for="enable">
+                        enable <em>cjs</em> for this domain <input id="enable" name="enable" type="checkbox">
+                    </label>
+                </div>
+                <div class="pure-u-1"></div>
+                <div class="editor pure-u-1">
+                    <textarea id="editor" name="editor"></textarea>
+                </div>
+                <div class="pure-u-1"></div>
+                <div class="control pure-u-3-5">
+                    <input type="submit" name="save" value="save" class="pure-button pure-button-primary">
+                    <input type="submit" name="reset" value="reset" class="pure-button">
+                </div>
+                <div class="include pure-u-2-5 text-right">
+                    <label for="include">
+                        include <select name="include" id="include">
+                            <option value=""> ---- nothing ---- </option>
+                            <option value="/jquery/1.11.0/jquery.min.js">jQuery 1.11.0</option>
+                            <option value="/jquery/2.1.0/jquery.min.js">jQuery 2.1.0</option>
+                        </select>
+                    </label>                    
+                </div>
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="lib/popup.js"></script>
+	</body>
+</html>
+
