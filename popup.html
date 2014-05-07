@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 	<head>
@@ -11,38 +10,49 @@
         <script type="text/javascript" src="lib/behave.js"></script>
 	</head>
 	<body>
-		<div class="cutomjs pure-g" id="cutomjs">
-            <form action="" method="post" accept-charset="utf-8" class="pure-form">            
-                <div class="about pure-u-2-5">
-                    <input type="text" name="domain" value="example.com" readonly="readonly">
-                </div>
-                <div class="enable pure-u-3-5 text-right">
-                    <label for="enable">
-                        enable <em>cjs</em> for this domain <input id="enable" name="enable" type="checkbox">
-                    </label>
-                </div>
-                <div class="pure-u-1"></div>
-                <div class="editor pure-u-1">
-                    <textarea id="editor" name="editor"></textarea>
-                </div>
-                <div class="pure-u-1"></div>
-                <div class="control pure-u-3-5">
-                    <input type="submit" name="save" value="save" class="pure-button pure-button-primary">
-                    <input type="submit" name="reset" value="reset" class="pure-button">
-                </div>
-                <div class="include pure-u-2-5 text-right">
-                    <label for="include">
-                        include <select name="include" id="include">
-                            <option value=""> ---- nothing ---- </option>
-                            <option value="/jquery/1.11.0/jquery.min.js">jQuery 1.11.0</option>
-                            <option value="/jquery/2.1.0/jquery.min.js">jQuery 2.1.0</option>
-                        </select>
-                    </label>                    
-                </div>
+		<div class="cutomjs" id="cutomjs">
+            <form action="" method="post" accept-charset="utf-8" class="pure-form">
+                
+                <div class="pure-g host">
+                    <div class="pure-u-3-5 host__name">
+                        <select id="host" name="host"></select>
+                        <a id="goto-host" href="">go to</a>
+                    </div>
+                    <div class="pure-u-2-5 host__enable">
+                        <label for="enable">
+                            enable <em class="blue-text">cjs</em> for <span id="enable-label-text">this host</span> 
+                            <input id="enable" name="enable" type="checkbox">
+                        </label>
+                    </div>
+                </div><!-- .top -->
+                
+                <div class="pure-g versions">
+                    <div class="pure-u-1-2 versions__title">
+                        <em>version <span id="versions-counter">1 of 1</span></em>
+                    </div>
+                    <div class="pure-u-1-2 versions__control">
+                        <a class="red-text" id="delete-version" href="">delete version</a>
+                        <button id="prev-version" class="pure-button icon-left-open"></button>
+                        <button id="next-version" class="pure-button icon-right-open"></button>
+                    </div>
+                </div><!-- .versions -->
+
+                <div class="pure-g source">
+                    <div class="pure-u-1 source__editor"></div>
+                </div><!-- .source -->
+
+                <div class="pure-g controls">
+                    <div class="pure-u-2-5 controls__save">
+                        <input type="submit" class="pure-button pure-button-primary" name="save" value="save">
+                    </div>
+                    <div class="pure-u-3-5 controls__include">
+                        <label for="include"></label>
+                        <select id="include" name="include"></select>
+                    </div>
+                </div><!-- .controls -->
             </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="lib/popup.js"></script>
 	</body>
 </html>
-
