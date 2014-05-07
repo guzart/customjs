@@ -7,7 +7,7 @@
         <link href="css/pure/0.4.2/forms-nr-min.css" rel="stylesheet">
         <link href="css/pure/0.4.2/buttons-min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <script type="text/javascript" src="lib/behave.js"></script>
+        <script type="text/javascript" src="lib/ace/ace.js" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="cutomjs" id="cutomjs">
@@ -16,7 +16,7 @@
                 <div class="pure-g host">
                     <div class="pure-u-3-5 host__name">
                         <select id="host" name="host"></select>
-                        <a id="goto-host" href="">go to</a>
+                        <a class="is-hidden" id="goto-host" href="">go to</a>
                     </div>
                     <div class="pure-u-2-5 host__enable">
                         <label for="enable">
@@ -25,29 +25,31 @@
                         </label>
                     </div>
                 </div><!-- .top -->
-                
-                <div class="pure-g versions">
-                    <div class="pure-u-1-2 versions__title">
-                        <em>version <span id="versions-counter">1 of 1</span></em>
+
+                <div class="pure-g include">
+                    <div class="pure-u-1 include__body">
+                        You can inject <a id="include-custom">your own external scripts</a> or <label for="include">one of predefined:</label>
+                        <select id="include" name="include"></select>
                     </div>
-                    <div class="pure-u-1-2 versions__control">
-                        <a class="red-text" id="delete-version" href="">delete version</a>
-                        <button id="prev-version" class="pure-button icon-left-open"></button>
-                        <button id="next-version" class="pure-button icon-right-open"></button>
-                    </div>
-                </div><!-- .versions -->
+                </div><!-- .include -->
 
                 <div class="pure-g source">
-                    <div class="pure-u-1 source__editor"></div>
+                    <div class="pure-u-1 source__editor">
+                        <pre id="ace-editor"></pre>
+                    </div>
                 </div><!-- .source -->
 
                 <div class="pure-g controls">
-                    <div class="pure-u-2-5 controls__save">
+                    <div class="pure-u-2-5 controls__save-version">
                         <input type="submit" class="pure-button pure-button-primary" name="save" value="save">
+                        <em>revision <span id="versions-counter">1 of 1</span> </em>
                     </div>
-                    <div class="pure-u-3-5 controls__include">
-                        <label for="include"></label>
-                        <select id="include" name="include"></select>
+                    <div class="pure-u-3-5 controls__versions">
+                        <a class="red-text" id="delete-version" href="">
+                            delete current revision
+                        </a>
+                        <button id="prev-version" class="pure-button icon-left-open pure-button-disabled"></button>
+                        <button id="next-version" class="pure-button icon-right-open"></button>
                     </div>
                 </div><!-- .controls -->
             </form>

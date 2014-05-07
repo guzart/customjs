@@ -4,12 +4,12 @@
  */
 
 .cutomjs {
-    padding: 20px 25px;
+    padding: 15px 25px;
     min-width: 500px;
     min-height: 500px;
     color: #4A4A4A;
-    font: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a,
@@ -25,15 +25,19 @@ a:hover,
 }
 
 a {
-    text-decoration: underline;
-}
-
-a:hover {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.is-hidden {
+    opacity: 0;
+}
+
 .pure-g {
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 
@@ -41,8 +45,7 @@ a:hover {
  * Host row (up)
  */
 
-.host {
-    
+.host {   
 }
 
 .host__name select {
@@ -50,13 +53,14 @@ a:hover {
 }
 
 .host__name a {
+    margin-left: 5px;
     font-size: 12px;
 }
 
 .host__enable {
     text-align: right;
-    line-height: 39px;
     font-size: 12px;
+    line-height: 34px;
 }
 
 .host__enable input {
@@ -67,33 +71,20 @@ a:hover {
 
 
 /**
- * Versions row (bellow)
+ * Include row (bellow top)
  */
 
-.versions {
-    line-height: 39px;
-}
-
-.versions__title strong {
-    
-}
-
-.versions__control {
+.include {
     text-align: right;
 }
 
-.versions__control a {
-    font-size: 12px;
-    margin-right: 10px;
+.include__body {
+    color: #999;
+    line-height: 35px;
 }
 
-.versions__control button {
-    font-size: 16px;
-    color: #a1a1a1;
-}
-
-.versions__delete {
-    
+.include__body select {
+    min-width: 110px;
 }
 
 
@@ -102,27 +93,40 @@ a:hover {
  */
 
 .source {
-    
 }
 
 .source__editor {
-    
+    border: 1px solid #EBEBEB;
 }
 
+.source__editor pre {
+    margin: 0;
+    min-height: 380px;
+    width: 100%;
+}
 
 /**
  * Controls row (bottom)
  */
 
 .controls {
-    
 }
 
-.controls__save {
-    
+.controls__save-version input {
+    font-size: 18px;
 }
 
-.controls__include {
+.controls__save-version em {
+    margin-left: 10px;
+}
+
+.controls__versions {
+    line-height: 39px;
+    text-align: right;
+}
+
+.controls__versions a {
+    margin-right: 10px;
 }
     
 
@@ -131,10 +135,10 @@ a:hover {
  */
 
  @font-face {
-  font-family: 'customjs';
-  src: url('../font/customjs.svg?96127482#customjs') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-family: 'customjs';
+  src: url('../font/customjs.svg?96127482#customjs') format('svg');
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -148,28 +152,28 @@ a:hover {
 */
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "customjs";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
  
   display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
   margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
+  width: 1em;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  font-family: "customjs";
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  speak: none;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
