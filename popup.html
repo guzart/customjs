@@ -29,18 +29,25 @@
                     </div>
                 </div><!-- .top -->
 
-                <div class="pure-g include">
-                    <div class="pure-u-1 include__body">
-                        You can inject <a href="#" id="open-popbox">your own external scripts</a> or <label for="include">one of predefined:</label>
-                        <select id="include" name="include"></select>
-                    </div>
-                    <div class="include__popbox is-hidden" id="include-popbox">
-                        <div class="include__popbox__body">
-                            <textarea name="external-scripts" id="external-scripts"></textarea>
+                <div class="pure-g">
+                    <div class="pure-u-1-8 share">
+                        <button id="share" class="pure-button pure-button-primary icon-share"></button>
+                    </div><!-- .share -->
+                    <div class="pure-u-7-8 include">
+                        <div class="include__body">
+                            You can inject 
+                            <a href="#" id="open-popbox">your own external scripts</a> or 
+                            <label for="include">one of predefined:</label>
+                            <select id="include" name="include"></select>
                         </div>
-                        <div class="include__popbox__screenmask" id="screen-mask"></div>
-                    </div>
-                </div><!-- .include -->
+                        <div class="include__popbox is-hidden" id="include-popbox">
+                            <div class="include__popbox__body">
+                                <textarea name="external-scripts" id="external-scripts"></textarea>
+                            </div>
+                            <div class="include__popbox__screenmask" id="screen-mask"></div>
+                        </div>
+                    </div><!-- .include -->
+                </div>
 
                 <div class="pure-g source">
                     <div class="pure-u-1 source__editor">

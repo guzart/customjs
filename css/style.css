@@ -72,6 +72,14 @@ a:hover {
 
 
 /**
+ * Share button
+ */
+.share {
+  font-size: 16px;
+}
+
+
+/**
  * Include row (bellow top)
  */
 
@@ -175,14 +183,13 @@ a:hover {
   font-family: 'customjs';
   src: url('../font/customjs.svg?96127482#customjs') format('svg');
 }
- 
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   display: inline-block;
   font-variant: normal;
   font-family: "customjs";
 }
- 
-.icon-plus:before { content: '\e802'; } /* '' */
-.icon-minus:before { content: '\e803'; } /* '' */
+
 .icon-left-open:before { content: '\e800'; } /* '' */
 .icon-right-open:before { content: '\e801'; } /* '' */
+.icon-share:before { content: '\e802'; } /* '' */
