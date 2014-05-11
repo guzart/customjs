@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<div class="cutomjs" id="cutomjs">
-            <form action="" method="post" accept-charset="utf-8" class="pure-form">
+            <form action="" method="post" accept-charset="utf-8" id="popup-form" class="pure-form">
                 
                 <div class="pure-g host">
                     <div class="pure-u-3-5 host__name">
@@ -23,30 +23,35 @@
                     </div>
                     <div class="pure-u-2-5 host__enable">
                         <label for="enable">
-                            enable <em class="blue-text">cjs</em> for <span id="enable-label-text">this host</span> 
+                            enable <em class="blue-text">cjs</em> for this host 
                             <input id="enable" name="enable" type="checkbox">
                         </label>
                     </div>
                 </div><!-- .top -->
 
                 <div class="pure-g">
+
                     <div class="pure-u-1-8 share">
                         <button id="share" class="pure-button pure-button-primary icon-share"></button>
                     </div><!-- .share -->
+
                     <div class="pure-u-7-8 include">
                         <div class="include__body">
                             You can inject 
                             <a href="#" id="open-popbox">your own external scripts</a> or 
                             <label for="include">one of predefined:</label>
-                            <select id="include" name="include"></select>
+                            <select id="include" name="include">
+                                <option value=""> ---- nothing ---- </option>                                
+                            </select>
                         </div>
                         <div class="include__popbox is-hidden" id="include-popbox">
                             <div class="include__popbox__body">
-                                <textarea name="external-scripts" id="external-scripts"></textarea>
+                                <textarea name="extra-scripts" id="extra-scripts"></textarea>
                             </div>
-                            <div class="include__popbox__screenmask" id="screen-mask"></div>
+                            <div class="include__popbox__screenmask" id="screen-mask" title="ahaha"></div>
                         </div>
                     </div><!-- .include -->
+
                 </div>
 
                 <div class="pure-g source">
@@ -57,8 +62,8 @@
 
                 <div class="pure-g controls">
                     <div class="pure-u-2-5 controls__save-revision">
-                        <input type="submit" class="pure-button pure-button-primary" name="save" value="save">
-                        <em id="revision-name">revision <span id="revision-counter">1 of 1</span></em>
+                        <input type="submit" id="save" class="pure-button pure-button-primary" name="save" value="save">
+                        <em>revision <span id="revision-counter">1 of 1</span></em>
                     </div>
                     <div class="pure-u-3-5 controls__revisions">
                         <a class="red-text" id="delete-revision" href="#">delete current revision</a>
