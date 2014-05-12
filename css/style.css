@@ -75,6 +75,7 @@ a:hover {
  * Share button
  */
 .share {
+  visibility: hidden;
   font-size: 16px;
 }
 
@@ -158,10 +159,11 @@ a:hover {
 
 .controls__save input {
   font-size: 18px;
+  margin-right: 10px;
 }
 
 .controls__remove-draft {
-  margin-left: 15px;
+  
 }
 
 
