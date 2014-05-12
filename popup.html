@@ -39,9 +39,9 @@
                         <div class="include__body">
                             You can inject 
                             <a href="#" id="open-popbox">your own external scripts</a> or 
-                            <label for="include">one of predefined:</label>
+                            <label for="include">predefined one:</label>
                             <select id="include" name="include">
-                                <option value=""> ---- nothing ---- </option>                                
+                                <option value=""> ---- nothing ---- </option>
                             </select>
                         </div>
                         <div class="include__popbox is-hidden" id="include-popbox">
@@ -61,14 +61,9 @@
                 </div><!-- .source -->
 
                 <div class="pure-g controls">
-                    <div class="pure-u-2-5 controls__save-revision">
-                        <input type="submit" id="save" class="pure-button pure-button-primary" name="save" value="save">
-                        <em>revision <span id="revision-counter">1 of 1</span></em>
-                    </div>
-                    <div class="pure-u-3-5 controls__revisions">
-                        <a class="red-text" id="delete-revision" href="#">delete current revision</a>
-                        <button id="prev-revision" class="pure-button icon-left-open pure-button-disabled"></button>
-                        <button id="next-revision" class="pure-button icon-right-open"></button>
+                    <div class="pure-u-2-5 controls__save">
+                        <input type="submit" id="save" class="pure-button" name="save" value="save">    
+                        <a id="draft-remove" class="controls__remove-draft red-text is-hidden" href="#">remove draft</a>
                     </div>
                 </div><!-- .controls -->
 

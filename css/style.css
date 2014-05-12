@@ -156,22 +156,14 @@ a:hover {
 .controls {
 }
 
-.controls__save-revision input {
+.controls__save input {
   font-size: 18px;
 }
 
-.controls__save-revision em {
-  margin-left: 10px;
+.controls__remove-draft {
+  margin-left: 15px;
 }
 
-.controls__revisions {
-  text-align: right;
-  line-height: 39px;
-}
-
-.controls__revisions a {
-  margin-right: 10px;
-}
 
 
 /**
