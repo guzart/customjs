@@ -3,7 +3,7 @@
  * Basic
  */
 
-.cutomjs {
+.customjs {
   position: relative;
   overflow: hidden;
   padding: 12px 24px;
@@ -12,6 +12,15 @@
   color: #4A4A4A;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.customjs.customjs--error {
+  width: 400px;
+  height: 75px;
+}
+
+.customjs.customjs--error form {
+  display: none;
 }
 
 a,
@@ -158,8 +167,8 @@ a:hover {
 }
 
 .controls__save input {
-  font-size: 18px;
   margin-right: 10px;
+  font-size: 18px;
 }
 
 .controls__remove-draft {
