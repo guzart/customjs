@@ -1,7 +1,7 @@
 customjs
 ========
 
-Custom JavaScript for websites - Chrome Extension
+[Custom JavaScript for websites - Chrome Extension](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija)
 
 Run custom JavaScript on any website.
 Use this tool to inject custom javascript in any website.
@@ -24,5 +24,5 @@ New features:
 ![Mind map](http://hromadadan.com/customjs/mindmap.png)
 
 Thanks to:
-Ace - http://ace.c9.io/
-Pure - http://purecss.io/
+- Ace - http://ace.c9.io/
+- Pure - http://purecss.io/
