@@ -16,8 +16,9 @@
   "content_security_policy": "script-src 'self' https://*.googleapis.com; object-src 'self'",
 
   "content_scripts": [{
+    "all_frames": true,
     "matches": ["<all_urls>"],    
-    "js": ["lib/script.js"]
+    "js": ["lib/script.js"]    
   }], 
 
   "browser_action": {
