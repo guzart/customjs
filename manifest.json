@@ -3,7 +3,7 @@
 
   "name": "Custom JavaScript for websites ",
   "description": "Run custom JavaScript on any website.",
-  "version": "2.0.0",
+  "version": "2.1.0",
 
   "permissions": [
     "http://*/",
@@ -16,7 +16,6 @@
   "content_security_policy": "script-src 'self' https://*.googleapis.com; object-src 'self'",
 
   "content_scripts": [{
-    //"all_frames": true,
     "matches": ["<all_urls>"],
     "js": ["lib/api.js"]
   }, {
