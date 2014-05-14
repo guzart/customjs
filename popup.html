@@ -2,20 +2,20 @@
 <html>
 	<head>
 		<title>Custom JavaScript</title>
-        
+
         <link href="css/pure/0.4.2/base-min.css" rel="stylesheet">
         <link href="css/pure/0.4.2/grids-nr-min.css" rel="stylesheet">
         <link href="css/pure/0.4.2/forms-nr-min.css" rel="stylesheet">
         <link href="css/pure/0.4.2/buttons-min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="lib/ace/ace.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<div class="customjs" id="customjs">                    
+		<div class="customjs" id="customjs">
             <form action="" method="post" accept-charset="utf-8" id="popup-form" class="pure-form">
-                
+
                 <div class="pure-g host">
                     <div class="pure-u-3-5 host__name">
                         <select id="host" name="host"></select>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="pure-u-2-5 host__enable">
                         <label for="enable">
-                            enable <em class="blue-text">cjs</em> for this host 
+                            enable <em class="blue-text">cjs</em> for this host
                             <input id="enable" name="enable" type="checkbox">
                         </label>
                     </div>
@@ -37,8 +37,8 @@
 
                     <div class="pure-u-7-8 include">
                         <div class="include__body">
-                            You can inject 
-                            <a href="#" id="open-popbox">your own external scripts</a> or 
+                            You can inject
+                            <a href="#" id="open-popbox">your own external scripts</a> or
                             <label for="include">predefined one:</label>
                             <select id="include" name="include">
                                 <option value=""> ---- nothing ---- </option>
@@ -74,7 +74,7 @@
                 <p class="red-text">It seems that this page cannot be modified with me..</p>
                 <span>tip: Try refresh page</span>
             </div><!-- .error -->
-        </div>        
+        </div>
         <script src="lib/popup.js"></script>
 	</body>
 </html>
