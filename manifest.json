@@ -4,7 +4,7 @@
   "name": "Custom JavaScript for websites ",
   "short_name": "customjs",
   "description": "Run custom JavaScript on any website.",
-  "version": "2.1.3",
+  "version": "2.1.30",
 
   "permissions": [
     "storage",
